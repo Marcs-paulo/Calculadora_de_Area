@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Área de Polígonos Regulares</title>
+    
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <h1>▀▄▀▄▀▄ Área de Polígonos Regulares ▀▄▀▄▀▄</h1>
+
+        <form id="poligonoForm">
+    
+            <label for="lados">Número de Lados:</label>
+    
+            <input type="number" id="lados" required>
+    
+            <label for="comprimento">Comprimento do Lado:</label>
+    
+            <input type="number" id="comprimento" required>
+    
+            <button type="button" onclick="calcularArea()">Calcular Área</button>
+    
+        </form>
+        <canvas id="poligonoCanvas" width="800" height="800"></canvas>
+
+        <div id="info"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
